@@ -1,0 +1,9 @@
+html {
+    background: 
+	url("http://swag.moe/viz/rei-03a.gif"),
+	url("http://swag.moe/viz/sailor_locket_1c.gif"),
+    	url("http://swag.moe/viz/k-on8a.gif");
+	
+    background-blend-mode: multiply, screen, saturation
+}
+

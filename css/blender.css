@@ -1,0 +1,39 @@
+[?25l[J[J[J[J[J[J[?12l[?25h[?1049h[?1h=[1;43r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[43;1H"blender.less" 40L, 1004C[1;1H@import "for";
+
+@blend-modes: multiply, screen, soft-light, color-burn, luminosity, hue;
+
+.defaultBackground() {
+  background+:
+    url("/gifs/rei-03a.gif"),
+    url("/gifs/sailor_locket_1c.gif"),
+    url("/gifs/k-on8a.gif");
+}
+
+.mix-modes(@bottom, @top) when not (@bottom = @top) {
+    @returned-blend-mode: @bottom, @top;
+}
+
+// takes urls for the GIFs / images - limit of 3 is arbitrary, really
+.mix-bg(@1st, @2nd, @3rd) {
+    background+: url(@1st), url(@2nd), url(@3rd);
+}
+
+.mix-top-mode-classes(@topmode) {
+    .for(@blend-modes); .-each(@mode) {[23;9H.@{mode}-@{topmode} when not (@mode = @topmode) {[24;13H.mix-modes(@mode, @topmode);[25;13Hbackground-blend-mode: @returned-blend-mode;[26;9H}
+    }
+}
+
+.mix-top-mode-classes(screen);
+.mix-top-mode-classes(soft-light);
+.mix-top-mode-classes(luminosity);
+.mix-top-mode-classes(multiply);
+.mix-top-mode-classes(color);
+.mix-top-mode-classes(hue);
+
+html {
+    .defaultBackground;
+    background+: url("/gifs/Eureka_small_1.gif");
+}
+[1m[34m~                                                                                                                                                 [42;1H~                                                                                                                                                 [1;1H[?12l[?25h[?25l[m[43;1H[1m[37m[41mE388: Couldn't find definition[1;1H[?12l[?25h[?25l[m[43;1HType  :quit<Enter>  to exit Vim[1;1H[?12l[?25h
+[43;1H
+[?1l>[?1049l
