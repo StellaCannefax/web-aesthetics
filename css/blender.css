@@ -1,39 +1,344 @@
-[?25l[J[J[J[J[J[J[?12l[?25h[?1049h[?1h=[1;43r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[43;1H"blender.less" 40L, 1004C[1;1H@import "for";
-
-@blend-modes: multiply, screen, soft-light, color-burn, luminosity, hue;
-
-.defaultBackground() {
-  background+:
-    url("/gifs/rei-03a.gif"),
-    url("/gifs/sailor_locket_1c.gif"),
-    url("/gifs/k-on8a.gif");
+.normal-screen {
+  background-blend-mode: normal, screen;
 }
-
-.mix-modes(@bottom, @top) when not (@bottom = @top) {
-    @returned-blend-mode: @bottom, @top;
+.multiply-screen {
+  background-blend-mode: multiply, screen;
 }
-
-// takes urls for the GIFs / images - limit of 3 is arbitrary, really
-.mix-bg(@1st, @2nd, @3rd) {
-    background+: url(@1st), url(@2nd), url(@3rd);
+.soft-light-screen {
+  background-blend-mode: soft-light, screen;
 }
-
-.mix-top-mode-classes(@topmode) {
-    .for(@blend-modes); .-each(@mode) {[23;9H.@{mode}-@{topmode} when not (@mode = @topmode) {[24;13H.mix-modes(@mode, @topmode);[25;13Hbackground-blend-mode: @returned-blend-mode;[26;9H}
-    }
+.color-burn-screen {
+  background-blend-mode: color-burn, screen;
 }
-
-.mix-top-mode-classes(screen);
-.mix-top-mode-classes(soft-light);
-.mix-top-mode-classes(luminosity);
-.mix-top-mode-classes(multiply);
-.mix-top-mode-classes(color);
-.mix-top-mode-classes(hue);
-
+.luminosity-screen {
+  background-blend-mode: luminosity, screen;
+}
+.hue-screen {
+  background-blend-mode: hue, screen;
+}
+.saturation-screen {
+  background-blend-mode: saturation, screen;
+}
+.normal-screen {
+  background-blend-mode: normal, screen;
+}
+.multiply-screen {
+  background-blend-mode: multiply, screen;
+}
+.soft-light-screen {
+  background-blend-mode: soft-light, screen;
+}
+.color-burn-screen {
+  background-blend-mode: color-burn, screen;
+}
+.luminosity-screen {
+  background-blend-mode: luminosity, screen;
+}
+.hue-screen {
+  background-blend-mode: hue, screen;
+}
+.saturation-screen {
+  background-blend-mode: saturation, screen;
+}
+.normal-screen {
+  background-blend-mode: normal, screen;
+}
+.normal-soft-light {
+  background-blend-mode: normal, soft-light;
+}
+.multiply-screen {
+  background-blend-mode: multiply, screen;
+}
+.multiply-soft-light {
+  background-blend-mode: multiply, soft-light;
+}
+.screen-soft-light {
+  background-blend-mode: screen, soft-light;
+}
+.soft-light-screen {
+  background-blend-mode: soft-light, screen;
+}
+.color-burn-screen {
+  background-blend-mode: color-burn, screen;
+}
+.color-burn-soft-light {
+  background-blend-mode: color-burn, soft-light;
+}
+.luminosity-screen {
+  background-blend-mode: luminosity, screen;
+}
+.luminosity-soft-light {
+  background-blend-mode: luminosity, soft-light;
+}
+.hue-screen {
+  background-blend-mode: hue, screen;
+}
+.hue-soft-light {
+  background-blend-mode: hue, soft-light;
+}
+.saturation-screen {
+  background-blend-mode: saturation, screen;
+}
+.saturation-soft-light {
+  background-blend-mode: saturation, soft-light;
+}
+.normal-screen {
+  background-blend-mode: normal, screen;
+}
+.normal-soft-light {
+  background-blend-mode: normal, soft-light;
+}
+.normal-luminosity {
+  background-blend-mode: normal, luminosity;
+}
+.multiply-screen {
+  background-blend-mode: multiply, screen;
+}
+.multiply-soft-light {
+  background-blend-mode: multiply, soft-light;
+}
+.multiply-luminosity {
+  background-blend-mode: multiply, luminosity;
+}
+.screen-soft-light {
+  background-blend-mode: screen, soft-light;
+}
+.screen-luminosity {
+  background-blend-mode: screen, luminosity;
+}
+.soft-light-screen {
+  background-blend-mode: soft-light, screen;
+}
+.soft-light-luminosity {
+  background-blend-mode: soft-light, luminosity;
+}
+.color-burn-screen {
+  background-blend-mode: color-burn, screen;
+}
+.color-burn-soft-light {
+  background-blend-mode: color-burn, soft-light;
+}
+.color-burn-luminosity {
+  background-blend-mode: color-burn, luminosity;
+}
+.luminosity-screen {
+  background-blend-mode: luminosity, screen;
+}
+.luminosity-soft-light {
+  background-blend-mode: luminosity, soft-light;
+}
+.hue-screen {
+  background-blend-mode: hue, screen;
+}
+.hue-soft-light {
+  background-blend-mode: hue, soft-light;
+}
+.hue-luminosity {
+  background-blend-mode: hue, luminosity;
+}
+.saturation-screen {
+  background-blend-mode: saturation, screen;
+}
+.saturation-soft-light {
+  background-blend-mode: saturation, soft-light;
+}
+.saturation-luminosity {
+  background-blend-mode: saturation, luminosity;
+}
+.normal-screen {
+  background-blend-mode: normal, screen;
+}
+.normal-soft-light {
+  background-blend-mode: normal, soft-light;
+}
+.normal-luminosity {
+  background-blend-mode: normal, luminosity;
+}
+.normal-multiply {
+  background-blend-mode: normal, multiply;
+}
+.multiply-screen {
+  background-blend-mode: multiply, screen;
+}
+.multiply-soft-light {
+  background-blend-mode: multiply, soft-light;
+}
+.multiply-luminosity {
+  background-blend-mode: multiply, luminosity;
+}
+.screen-soft-light {
+  background-blend-mode: screen, soft-light;
+}
+.screen-luminosity {
+  background-blend-mode: screen, luminosity;
+}
+.screen-multiply {
+  background-blend-mode: screen, multiply;
+}
+.soft-light-screen {
+  background-blend-mode: soft-light, screen;
+}
+.soft-light-luminosity {
+  background-blend-mode: soft-light, luminosity;
+}
+.soft-light-multiply {
+  background-blend-mode: soft-light, multiply;
+}
+.color-burn-screen {
+  background-blend-mode: color-burn, screen;
+}
+.color-burn-soft-light {
+  background-blend-mode: color-burn, soft-light;
+}
+.color-burn-luminosity {
+  background-blend-mode: color-burn, luminosity;
+}
+.color-burn-multiply {
+  background-blend-mode: color-burn, multiply;
+}
+.luminosity-screen {
+  background-blend-mode: luminosity, screen;
+}
+.luminosity-soft-light {
+  background-blend-mode: luminosity, soft-light;
+}
+.luminosity-multiply {
+  background-blend-mode: luminosity, multiply;
+}
+.hue-screen {
+  background-blend-mode: hue, screen;
+}
+.hue-soft-light {
+  background-blend-mode: hue, soft-light;
+}
+.hue-luminosity {
+  background-blend-mode: hue, luminosity;
+}
+.hue-multiply {
+  background-blend-mode: hue, multiply;
+}
+.saturation-screen {
+  background-blend-mode: saturation, screen;
+}
+.saturation-soft-light {
+  background-blend-mode: saturation, soft-light;
+}
+.saturation-luminosity {
+  background-blend-mode: saturation, luminosity;
+}
+.saturation-multiply {
+  background-blend-mode: saturation, multiply;
+}
+.normal-screen {
+  background-blend-mode: normal, screen;
+}
+.normal-soft-light {
+  background-blend-mode: normal, soft-light;
+}
+.normal-luminosity {
+  background-blend-mode: normal, luminosity;
+}
+.normal-multiply {
+  background-blend-mode: normal, multiply;
+}
+.normal-color {
+  background-blend-mode: normal, color;
+}
+.multiply-screen {
+  background-blend-mode: multiply, screen;
+}
+.multiply-soft-light {
+  background-blend-mode: multiply, soft-light;
+}
+.multiply-luminosity {
+  background-blend-mode: multiply, luminosity;
+}
+.multiply-color {
+  background-blend-mode: multiply, color;
+}
+.screen-soft-light {
+  background-blend-mode: screen, soft-light;
+}
+.screen-luminosity {
+  background-blend-mode: screen, luminosity;
+}
+.screen-multiply {
+  background-blend-mode: screen, multiply;
+}
+.screen-color {
+  background-blend-mode: screen, color;
+}
+.soft-light-screen {
+  background-blend-mode: soft-light, screen;
+}
+.soft-light-luminosity {
+  background-blend-mode: soft-light, luminosity;
+}
+.soft-light-multiply {
+  background-blend-mode: soft-light, multiply;
+}
+.soft-light-color {
+  background-blend-mode: soft-light, color;
+}
+.color-burn-screen {
+  background-blend-mode: color-burn, screen;
+}
+.color-burn-soft-light {
+  background-blend-mode: color-burn, soft-light;
+}
+.color-burn-luminosity {
+  background-blend-mode: color-burn, luminosity;
+}
+.color-burn-multiply {
+  background-blend-mode: color-burn, multiply;
+}
+.color-burn-color {
+  background-blend-mode: color-burn, color;
+}
+.luminosity-screen {
+  background-blend-mode: luminosity, screen;
+}
+.luminosity-soft-light {
+  background-blend-mode: luminosity, soft-light;
+}
+.luminosity-multiply {
+  background-blend-mode: luminosity, multiply;
+}
+.luminosity-color {
+  background-blend-mode: luminosity, color;
+}
+.hue-screen {
+  background-blend-mode: hue, screen;
+}
+.hue-soft-light {
+  background-blend-mode: hue, soft-light;
+}
+.hue-luminosity {
+  background-blend-mode: hue, luminosity;
+}
+.hue-multiply {
+  background-blend-mode: hue, multiply;
+}
+.hue-color {
+  background-blend-mode: hue, color;
+}
+.saturation-screen {
+  background-blend-mode: saturation, screen;
+}
+.saturation-soft-light {
+  background-blend-mode: saturation, soft-light;
+}
+.saturation-luminosity {
+  background-blend-mode: saturation, luminosity;
+}
+.saturation-multiply {
+  background-blend-mode: saturation, multiply;
+}
+.saturation-color {
+  background-blend-mode: saturation, color;
+}
 html {
-    .defaultBackground;
-    background+: url("/gifs/Eureka_small_1.gif");
+  background: url("/gifs/Eureka_small_1.gif"), url("/gifs/MACPLUSGRASS.gif");
+  background-size: 100%;
+  background-blend-mode: screen, multiply;
 }
-[1m[34m~                                                                                                                                                 [42;1H~                                                                                                                                                 [1;1H[?12l[?25h[?25l[m[43;1H[1m[37m[41mE388: Couldn't find definition[1;1H[?12l[?25h[?25l[m[43;1HType  :quit<Enter>  to exit Vim[1;1H[?12l[?25h
-[43;1H
-[?1l>[?1049l

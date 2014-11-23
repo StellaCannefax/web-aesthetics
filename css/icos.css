@@ -1,33 +1,3 @@
 html {
-    background-image: url("http://swag.moe/viz/flcl_2a.gif");
-}
-
-div#gifbuffer_1 {
-    
-}
-
-div#gifbuffer_2 {
-    
-}
-
-div#widget {
-    opacity: 0.25
-}
-
-.fuu_6b {
-    background-image: url("http://swag.moe/viz/fuu_6b.gif")
-}
-
-
-.eureka_1 {
-    background-image: url("http://swag.moe/viz/gifs/eureka_small_1.gif")
-}
-
-
-.sailor_locket_slow {
-    background-image: url("http://swag.moe/viz/sailor_locket_1c.gif")
-}
-
-.sailor_mercury_1 {
-    background-image: url("http://swag.moe/viz/crystal_mercury_1d_small.gif")
+    background-image: url("/gifs/flcl_2a.gif");
 }
