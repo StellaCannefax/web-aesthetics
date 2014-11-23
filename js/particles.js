@@ -15,7 +15,7 @@ function groupToMouse(group) {
         - ( mousePos.y / window.innerHeight ) * 2 + 1,
         0.5 );
 
-    projector.unprojectVector( vector, camera );
+    vector.unproject( camera );
     var dir = vector.sub( camera.position ).normalize();
     var distance = - camera.position.z / dir.z;
     var pos = camera.position.clone().add( dir.multiplyScalar( distance ) );
@@ -119,8 +119,8 @@ function initParticles() {
         opacityStart: .75,
         opacityMiddle: .666,
         opacityEnd: .333,
-        particleCount: 2000,
-        particlesPerSecond: 60,
+        particleCount: 1500,
+        particlesPerSecond: 50,
     });
     
     smallerEmitter = new SPE.Emitter({
@@ -135,9 +135,9 @@ function initParticles() {
         sizeEnd: .5,
         opacityStart: .88,
         opacityMiddle: .75,
-        opacityEnd: .655,
+        opacityEnd: .7,
         particleCount: 3000,
-        particlesPerSecond: 400,
+        particlesPerSecond: 300,
     });
     
     smallerEmitter2 = new SPE.Emitter({
@@ -154,7 +154,7 @@ function initParticles() {
         opacityMiddle: .7,
         opacityEnd: .8,
         particleCount: 2500,
-        particlesPerSecond: 400,
+        particlesPerSecond: 300,
     });
     
     smallerEmitter3 = new SPE.Emitter({
@@ -165,8 +165,8 @@ function initParticles() {
         colorStart: new THREE.Color('green'),
         colorStartSpread: new THREE.Vector3(10, -15, 20),
         colorEnd: new THREE.Color('purple'),
-        sizeStart: 6,
-        sizeEnd: 4,
+        sizeStart: 7,
+        sizeEnd: 3,
         opacityStart: .8,
         opacityMiddle: .88,
         opacityEnd: .7,
@@ -188,7 +188,7 @@ function initParticles() {
         opacityMiddle: .5,
         opacityEnd: .4,
         particleCount: 1000,
-        particlesPerSecond: 50,
+        particlesPerSecond: 40,
     });
     for (var n=1 ; n < 6 ; n++) {
         var dir = 1;
@@ -212,7 +212,7 @@ function initParticles() {
             opacityMiddle: .75,
             opacityEnd: .6,
             particleCount: 300,
-            particlesPerSecond: 25,
+            particlesPerSecond: 15,
         });
         console.log(starEmitter);
         particleCursor.addEmitter( starEmitter );
@@ -277,7 +277,7 @@ initParticles();
 setTimeout(animate, 10);
 setInterval(function(){ 
     groupToMouse(particleCursor); 
-}, 50);
+}, 67);
 
 
 
