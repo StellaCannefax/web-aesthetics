@@ -131,11 +131,11 @@ function initParticles() {
         colorStart: new THREE.Color('purple'),
         colorStartSpread: new THREE.Vector3(10, 15, 40),
         colorEnd: new THREE.Color('azure'),
-        sizeStart: 5,
+        sizeStart: 4,
         sizeEnd: .5,
-        opacityStart: .88,
-        opacityMiddle: .75,
-        opacityEnd: .7,
+        opacityStart: .85,
+        opacityMiddle: .7,
+        opacityEnd: .666,
         particleCount: 3000,
         particlesPerSecond: 300,
     });
@@ -239,7 +239,7 @@ function animate() {
     requestAnimationFrame( animate );
     //controls.update();
     // Using a fixed time-step here to avoid pauses
-    render( 0.016 );
+    render( 0.024 );
     stats.update();
 }
 

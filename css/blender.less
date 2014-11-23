@@ -2,10 +2,9 @@
 
 @blend-modes: normal, multiply, screen, soft-light, color-burn, luminosity, hue, saturation;
 
+@gifs: Eureka_small_1, MACPLUSGRASS, start95optimized, crystal_mercury_1b, sailor_locket_1c, sailordither1;
+
 .defaultBackground() {
-  background+:
-    url("/gifs/Eureka_small_1.gif"),
-    url("/gifs/MACPLUSGRASS.gif");
   background-size: 100%;
 }
 
@@ -17,14 +16,35 @@
     } 
 }
 
+
 .mix-top-mode-classes(screen);
 .mix-top-mode-classes(soft-light);
 .mix-top-mode-classes(luminosity);
 .mix-top-mode-classes(multiply);
-.mix-top-mode-classes(color);
 .mix-top-mode-classes(hue);
+.mix-top-mode-classes(saturation);
+.mix-top-mode-classes(color-burn);
+
+.for(@gifs); .-each(@gif) {
+    .@{gif} {
+        background: url("gifs/@{gif}.gif");
+    }
+}
+
+.start {
+  background+:
+    url("/gifs/start95optimized.gif");
+  background-size: 100%;
+}
+
+.eureka-mac {
+  background+:
+    url("/gifs/Eureka_small_1.gif"),
+    url("/gifs/MACPLUSGRASS.gif");
+  background-size: 100%;
+}
 
 html {
     .defaultBackground;
-    .screen-multiply;
+//    .screen-multiply;
 }
