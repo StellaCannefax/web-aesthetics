@@ -91,8 +91,8 @@ function initParticles() {
     emitter = new SPE.Emitter({
         type: 'sphere',
         position: new THREE.Vector3(0, 0, 0),
-        radius: 33,
-        speed: .20,
+        radius: 42,
+        speed: .42,
         colorStart: new THREE.Color('blue'),
         colorStartSpread: new THREE.Vector3(10, 10, 10),
         colorEnd: new THREE.Color('purple'),
@@ -102,15 +102,15 @@ function initParticles() {
         opacityStart: .25,
         opacityMiddle: .666,
         opacityEnd: .42,
-        particleCount: 2000,
+        particleCount: 1200,
         angleAlignVelocity: 1
     });
 
     smallEmitter = new SPE.Emitter({
         type: 'sphere',
         position: new THREE.Vector3(0, 0, 0),
-        radius: 25,
-        speed: .2,
+        radius: 33,
+        speed: 3.666,
         colorStart: new THREE.Color('purple'),
         colorStartSpread: new THREE.Vector3(5, 5, 25),
         colorEnd: new THREE.Color('green'),
@@ -119,8 +119,8 @@ function initParticles() {
         opacityStart: .75,
         opacityMiddle: .666,
         opacityEnd: .333,
-        particleCount: 5000,
-        particlesPerSecond: 100,
+        particleCount: 2000,
+        particlesPerSecond: 60,
     });
     
     smallerEmitter = new SPE.Emitter({
@@ -133,11 +133,11 @@ function initParticles() {
         colorEnd: new THREE.Color('azure'),
         sizeStart: 5,
         sizeEnd: .5,
-        opacityStart: .7,
-        opacityMiddle: .6,
-        opacityEnd: .5,
+        opacityStart: .88,
+        opacityMiddle: .75,
+        opacityEnd: .655,
         particleCount: 3000,
-        particlesPerSecond: 420,
+        particlesPerSecond: 400,
     });
     
     smallerEmitter2 = new SPE.Emitter({
@@ -154,7 +154,7 @@ function initParticles() {
         opacityMiddle: .7,
         opacityEnd: .8,
         particleCount: 2500,
-        particlesPerSecond: 420,
+        particlesPerSecond: 400,
     });
     
     smallerEmitter3 = new SPE.Emitter({
@@ -171,14 +171,14 @@ function initParticles() {
         opacityMiddle: .88,
         opacityEnd: .7,
         particleCount: 2000,
-        particlesPerSecond: 250,
+        particlesPerSecond: 200,
     });
 
     centerEmitter = new SPE.Emitter({
         type: 'sphere',
         position: new THREE.Vector3(0, 0, 0),
         radius: 10,
-        speed: 2,
+        speed: 4,
         colorStart: new THREE.Color('aqua'),
         colorStartSpread: new THREE.Vector3(10, -25, 50),
         colorEnd: new THREE.Color('orange'),
@@ -187,8 +187,8 @@ function initParticles() {
         opacityStart: .6,
         opacityMiddle: .5,
         opacityEnd: .4,
-        particleCount: 1200,
-        particlesPerSecond: 125,
+        particleCount: 1000,
+        particlesPerSecond: 50,
     });
     for (var n=1 ; n < 6 ; n++) {
         var dir = 1;
@@ -209,10 +209,10 @@ function initParticles() {
             sizeStart: .75,
             sizeEnd: 1.25,
             opacityStart: .8,
-            opacityMiddle: .6,
-            opacityEnd: .4,
-            particleCount: 600,
-            particlesPerSecond: 80,
+            opacityMiddle: .75,
+            opacityEnd: .6,
+            particleCount: 300,
+            particlesPerSecond: 25,
         });
         console.log(starEmitter);
         particleCursor.addEmitter( starEmitter );
@@ -240,7 +240,7 @@ function animate() {
     //controls.update();
     // Using a fixed time-step here to avoid pauses
     render( 0.016 );
-    //stats.update();
+    stats.update();
 }
 
 function updateCamera() {
