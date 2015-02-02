@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Silly Cubes</title>
+		<style>canvas { width: 100%; height: 100% }</style>
+        <link rel="stylesheet" type="text/css" href="css/icos.css">
+	</head>
+	<body>
+		<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+		<script src="js/three.min.js"></script>
+		<script src="js/text.js"></script>
+		<script src="js/mouse.js"></script>
+	    <audio src="audio/Style%20Wolf%20produced.mp3" height="100px" width="100px" autoplay="true"
+        ontimeupdate="document.getElementById('tracktime').innerHTML = Math.floor(this.currentTime) + ' / ' + Math.floor(this.duration);
+        currentPlayTime=this.currentTime;">
+        </audio>
+        <span id="tracktime">0 / 0</span>
+        <div id="gifbuffer_1"></div>
+        <div id="gifbuffer_2"></div>
+        <div id="gifbuffer_3"></div>
+    </body>
+</html>

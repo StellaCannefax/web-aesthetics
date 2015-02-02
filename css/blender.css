@@ -1,752 +1,88 @@
-.normal {
-  background: url("gifs/normal.gif");
-}
-.multiply {
-  background: url("gifs/multiply.gif");
-}
-.screen {
-  background: url("gifs/screen.gif");
-}
-.soft-light {
-  background: url("gifs/soft-light.gif");
-}
-.color-burn {
-  background: url("gifs/color-burn.gif");
-}
-.luminosity {
-  background: url("gifs/luminosity.gif");
-}
-.hue {
-  background: url("gifs/hue.gif");
-}
-.saturation {
-  background: url("gifs/saturation.gif");
-}
-.normal-screen {
-  background-blend-mode: normal, screen;
-}
-.normal {
-  background: url("gifs/normal.gif");
-}
-.multiply-screen {
-  background-blend-mode: multiply, screen;
-}
-.multiply {
-  background: url("gifs/multiply.gif");
-}
-.screen {
-  background: url("gifs/screen.gif");
-}
-.soft-light-screen {
-  background-blend-mode: soft-light, screen;
-}
-.soft-light {
-  background: url("gifs/soft-light.gif");
-}
-.color-burn-screen {
-  background-blend-mode: color-burn, screen;
-}
-.color-burn {
-  background: url("gifs/color-burn.gif");
-}
-.luminosity-screen {
-  background-blend-mode: luminosity, screen;
-}
-.luminosity {
-  background: url("gifs/luminosity.gif");
-}
-.hue-screen {
-  background-blend-mode: hue, screen;
-}
-.hue {
-  background: url("gifs/hue.gif");
-}
-.saturation-screen {
-  background-blend-mode: saturation, screen;
-}
-.saturation {
-  background: url("gifs/saturation.gif");
-}
-.normal-screen {
-  background-blend-mode: normal, screen;
-}
-.normal-soft-light {
-  background-blend-mode: normal, soft-light;
-}
-.normal {
-  background: url("gifs/normal.gif");
-}
-.multiply-screen {
-  background-blend-mode: multiply, screen;
-}
-.multiply-soft-light {
-  background-blend-mode: multiply, soft-light;
-}
-.multiply {
-  background: url("gifs/multiply.gif");
-}
-.screen-soft-light {
-  background-blend-mode: screen, soft-light;
-}
-.screen {
-  background: url("gifs/screen.gif");
-}
-.soft-light-screen {
-  background-blend-mode: soft-light, screen;
-}
-.soft-light {
-  background: url("gifs/soft-light.gif");
-}
-.color-burn-screen {
-  background-blend-mode: color-burn, screen;
-}
-.color-burn-soft-light {
-  background-blend-mode: color-burn, soft-light;
-}
-.color-burn {
-  background: url("gifs/color-burn.gif");
-}
-.luminosity-screen {
-  background-blend-mode: luminosity, screen;
-}
-.luminosity-soft-light {
-  background-blend-mode: luminosity, soft-light;
-}
-.luminosity {
-  background: url("gifs/luminosity.gif");
-}
-.hue-screen {
-  background-blend-mode: hue, screen;
-}
-.hue-soft-light {
-  background-blend-mode: hue, soft-light;
-}
-.hue {
-  background: url("gifs/hue.gif");
-}
-.saturation-screen {
-  background-blend-mode: saturation, screen;
-}
-.saturation-soft-light {
-  background-blend-mode: saturation, soft-light;
-}
-.saturation {
-  background: url("gifs/saturation.gif");
-}
-.normal-screen {
-  background-blend-mode: normal, screen;
-}
-.normal-soft-light {
-  background-blend-mode: normal, soft-light;
-}
-.normal-luminosity {
-  background-blend-mode: normal, luminosity;
-}
-.normal {
-  background: url("gifs/normal.gif");
-}
-.multiply-screen {
-  background-blend-mode: multiply, screen;
-}
-.multiply-soft-light {
-  background-blend-mode: multiply, soft-light;
-}
-.multiply-luminosity {
-  background-blend-mode: multiply, luminosity;
-}
-.multiply {
-  background: url("gifs/multiply.gif");
-}
-.screen-soft-light {
-  background-blend-mode: screen, soft-light;
-}
-.screen-luminosity {
-  background-blend-mode: screen, luminosity;
-}
-.screen {
-  background: url("gifs/screen.gif");
-}
-.soft-light-screen {
-  background-blend-mode: soft-light, screen;
-}
-.soft-light-luminosity {
-  background-blend-mode: soft-light, luminosity;
-}
-.soft-light {
-  background: url("gifs/soft-light.gif");
-}
-.color-burn-screen {
-  background-blend-mode: color-burn, screen;
-}
-.color-burn-soft-light {
-  background-blend-mode: color-burn, soft-light;
-}
-.color-burn-luminosity {
-  background-blend-mode: color-burn, luminosity;
-}
-.color-burn {
-  background: url("gifs/color-burn.gif");
-}
-.luminosity-screen {
-  background-blend-mode: luminosity, screen;
-}
-.luminosity-soft-light {
-  background-blend-mode: luminosity, soft-light;
-}
-.luminosity {
-  background: url("gifs/luminosity.gif");
-}
-.hue-screen {
-  background-blend-mode: hue, screen;
-}
-.hue-soft-light {
-  background-blend-mode: hue, soft-light;
-}
-.hue-luminosity {
-  background-blend-mode: hue, luminosity;
-}
-.hue {
-  background: url("gifs/hue.gif");
-}
-.saturation-screen {
-  background-blend-mode: saturation, screen;
-}
-.saturation-soft-light {
-  background-blend-mode: saturation, soft-light;
-}
-.saturation-luminosity {
-  background-blend-mode: saturation, luminosity;
-}
-.saturation {
-  background: url("gifs/saturation.gif");
-}
-.normal-screen {
-  background-blend-mode: normal, screen;
-}
-.normal-soft-light {
-  background-blend-mode: normal, soft-light;
-}
-.normal-luminosity {
-  background-blend-mode: normal, luminosity;
-}
-.normal-multiply {
-  background-blend-mode: normal, multiply;
-}
-.normal {
-  background: url("gifs/normal.gif");
-}
-.multiply-screen {
-  background-blend-mode: multiply, screen;
-}
-.multiply-soft-light {
-  background-blend-mode: multiply, soft-light;
-}
-.multiply-luminosity {
-  background-blend-mode: multiply, luminosity;
-}
-.multiply {
-  background: url("gifs/multiply.gif");
-}
-.screen-soft-light {
-  background-blend-mode: screen, soft-light;
-}
-.screen-luminosity {
-  background-blend-mode: screen, luminosity;
-}
-.screen-multiply {
-  background-blend-mode: screen, multiply;
-}
-.screen {
-  background: url("gifs/screen.gif");
-}
-.soft-light-screen {
-  background-blend-mode: soft-light, screen;
-}
-.soft-light-luminosity {
-  background-blend-mode: soft-light, luminosity;
-}
-.soft-light-multiply {
-  background-blend-mode: soft-light, multiply;
-}
-.soft-light {
-  background: url("gifs/soft-light.gif");
-}
-.color-burn-screen {
-  background-blend-mode: color-burn, screen;
-}
-.color-burn-soft-light {
-  background-blend-mode: color-burn, soft-light;
-}
-.color-burn-luminosity {
-  background-blend-mode: color-burn, luminosity;
-}
-.color-burn-multiply {
-  background-blend-mode: color-burn, multiply;
-}
-.color-burn {
-  background: url("gifs/color-burn.gif");
-}
-.luminosity-screen {
-  background-blend-mode: luminosity, screen;
-}
-.luminosity-soft-light {
-  background-blend-mode: luminosity, soft-light;
-}
-.luminosity-multiply {
-  background-blend-mode: luminosity, multiply;
-}
-.luminosity {
-  background: url("gifs/luminosity.gif");
-}
-.hue-screen {
-  background-blend-mode: hue, screen;
-}
-.hue-soft-light {
-  background-blend-mode: hue, soft-light;
-}
-.hue-luminosity {
-  background-blend-mode: hue, luminosity;
-}
-.hue-multiply {
-  background-blend-mode: hue, multiply;
-}
-.hue {
-  background: url("gifs/hue.gif");
-}
-.saturation-screen {
-  background-blend-mode: saturation, screen;
-}
-.saturation-soft-light {
-  background-blend-mode: saturation, soft-light;
-}
-.saturation-luminosity {
-  background-blend-mode: saturation, luminosity;
-}
-.saturation-multiply {
-  background-blend-mode: saturation, multiply;
-}
-.saturation {
-  background: url("gifs/saturation.gif");
-}
-.normal-screen {
-  background-blend-mode: normal, screen;
-}
-.normal-soft-light {
-  background-blend-mode: normal, soft-light;
-}
-.normal-luminosity {
-  background-blend-mode: normal, luminosity;
-}
-.normal-multiply {
-  background-blend-mode: normal, multiply;
-}
-.normal-hue {
-  background-blend-mode: normal, hue;
-}
-.normal {
-  background: url("gifs/normal.gif");
-}
-.multiply-screen {
-  background-blend-mode: multiply, screen;
-}
-.multiply-soft-light {
-  background-blend-mode: multiply, soft-light;
-}
-.multiply-luminosity {
-  background-blend-mode: multiply, luminosity;
-}
-.multiply-hue {
-  background-blend-mode: multiply, hue;
-}
-.multiply {
-  background: url("gifs/multiply.gif");
-}
-.screen-soft-light {
-  background-blend-mode: screen, soft-light;
-}
-.screen-luminosity {
-  background-blend-mode: screen, luminosity;
-}
-.screen-multiply {
-  background-blend-mode: screen, multiply;
-}
-.screen-hue {
-  background-blend-mode: screen, hue;
-}
-.screen {
-  background: url("gifs/screen.gif");
-}
-.soft-light-screen {
-  background-blend-mode: soft-light, screen;
-}
-.soft-light-luminosity {
-  background-blend-mode: soft-light, luminosity;
-}
-.soft-light-multiply {
-  background-blend-mode: soft-light, multiply;
-}
-.soft-light-hue {
-  background-blend-mode: soft-light, hue;
-}
-.soft-light {
-  background: url("gifs/soft-light.gif");
-}
-.color-burn-screen {
-  background-blend-mode: color-burn, screen;
-}
-.color-burn-soft-light {
-  background-blend-mode: color-burn, soft-light;
-}
-.color-burn-luminosity {
-  background-blend-mode: color-burn, luminosity;
-}
-.color-burn-multiply {
-  background-blend-mode: color-burn, multiply;
-}
-.color-burn-hue {
-  background-blend-mode: color-burn, hue;
-}
-.color-burn {
-  background: url("gifs/color-burn.gif");
-}
-.luminosity-screen {
-  background-blend-mode: luminosity, screen;
-}
-.luminosity-soft-light {
-  background-blend-mode: luminosity, soft-light;
-}
-.luminosity-multiply {
-  background-blend-mode: luminosity, multiply;
-}
-.luminosity-hue {
-  background-blend-mode: luminosity, hue;
-}
-.luminosity {
-  background: url("gifs/luminosity.gif");
-}
-.hue-screen {
-  background-blend-mode: hue, screen;
-}
-.hue-soft-light {
-  background-blend-mode: hue, soft-light;
-}
-.hue-luminosity {
-  background-blend-mode: hue, luminosity;
-}
-.hue-multiply {
-  background-blend-mode: hue, multiply;
-}
-.hue {
-  background: url("gifs/hue.gif");
-}
-.saturation-screen {
-  background-blend-mode: saturation, screen;
-}
-.saturation-soft-light {
-  background-blend-mode: saturation, soft-light;
-}
-.saturation-luminosity {
-  background-blend-mode: saturation, luminosity;
-}
-.saturation-multiply {
-  background-blend-mode: saturation, multiply;
-}
-.saturation-hue {
-  background-blend-mode: saturation, hue;
-}
-.saturation {
-  background: url("gifs/saturation.gif");
-}
-.normal-screen {
-  background-blend-mode: normal, screen;
-}
-.normal-soft-light {
-  background-blend-mode: normal, soft-light;
-}
-.normal-luminosity {
-  background-blend-mode: normal, luminosity;
-}
-.normal-multiply {
-  background-blend-mode: normal, multiply;
-}
-.normal-hue {
-  background-blend-mode: normal, hue;
-}
-.normal-saturation {
-  background-blend-mode: normal, saturation;
-}
-.normal {
-  background: url("gifs/normal.gif");
-}
-.multiply-screen {
-  background-blend-mode: multiply, screen;
-}
-.multiply-soft-light {
-  background-blend-mode: multiply, soft-light;
-}
-.multiply-luminosity {
-  background-blend-mode: multiply, luminosity;
-}
-.multiply-hue {
-  background-blend-mode: multiply, hue;
-}
-.multiply-saturation {
-  background-blend-mode: multiply, saturation;
-}
-.multiply {
-  background: url("gifs/multiply.gif");
-}
-.screen-soft-light {
-  background-blend-mode: screen, soft-light;
-}
-.screen-luminosity {
-  background-blend-mode: screen, luminosity;
-}
-.screen-multiply {
-  background-blend-mode: screen, multiply;
-}
-.screen-hue {
-  background-blend-mode: screen, hue;
-}
-.screen-saturation {
-  background-blend-mode: screen, saturation;
-}
-.screen {
-  background: url("gifs/screen.gif");
-}
-.soft-light-screen {
-  background-blend-mode: soft-light, screen;
-}
-.soft-light-luminosity {
-  background-blend-mode: soft-light, luminosity;
-}
-.soft-light-multiply {
-  background-blend-mode: soft-light, multiply;
-}
-.soft-light-hue {
-  background-blend-mode: soft-light, hue;
-}
-.soft-light-saturation {
-  background-blend-mode: soft-light, saturation;
-}
-.soft-light {
-  background: url("gifs/soft-light.gif");
-}
-.color-burn-screen {
-  background-blend-mode: color-burn, screen;
-}
-.color-burn-soft-light {
-  background-blend-mode: color-burn, soft-light;
-}
-.color-burn-luminosity {
-  background-blend-mode: color-burn, luminosity;
-}
-.color-burn-multiply {
-  background-blend-mode: color-burn, multiply;
-}
-.color-burn-hue {
-  background-blend-mode: color-burn, hue;
-}
-.color-burn-saturation {
-  background-blend-mode: color-burn, saturation;
-}
-.color-burn {
-  background: url("gifs/color-burn.gif");
-}
-.luminosity-screen {
-  background-blend-mode: luminosity, screen;
-}
-.luminosity-soft-light {
-  background-blend-mode: luminosity, soft-light;
-}
-.luminosity-multiply {
-  background-blend-mode: luminosity, multiply;
-}
-.luminosity-hue {
-  background-blend-mode: luminosity, hue;
-}
-.luminosity-saturation {
-  background-blend-mode: luminosity, saturation;
-}
-.luminosity {
-  background: url("gifs/luminosity.gif");
-}
-.hue-screen {
-  background-blend-mode: hue, screen;
-}
-.hue-soft-light {
-  background-blend-mode: hue, soft-light;
-}
-.hue-luminosity {
-  background-blend-mode: hue, luminosity;
-}
-.hue-multiply {
-  background-blend-mode: hue, multiply;
-}
-.hue-saturation {
-  background-blend-mode: hue, saturation;
-}
-.hue {
-  background: url("gifs/hue.gif");
-}
-.saturation-screen {
-  background-blend-mode: saturation, screen;
-}
-.saturation-soft-light {
-  background-blend-mode: saturation, soft-light;
-}
-.saturation-luminosity {
-  background-blend-mode: saturation, luminosity;
-}
-.saturation-multiply {
-  background-blend-mode: saturation, multiply;
-}
-.saturation-hue {
-  background-blend-mode: saturation, hue;
-}
-.saturation {
-  background: url("gifs/saturation.gif");
-}
-.Eureka_small_1-screen {
-  background-blend-mode: Eureka_small_1, screen;
-}
-.Eureka_small_1-soft-light {
-  background-blend-mode: Eureka_small_1, soft-light;
-}
-.Eureka_small_1-luminosity {
-  background-blend-mode: Eureka_small_1, luminosity;
-}
-.Eureka_small_1-multiply {
-  background-blend-mode: Eureka_small_1, multiply;
-}
-.Eureka_small_1-hue {
-  background-blend-mode: Eureka_small_1, hue;
-}
-.Eureka_small_1-saturation {
-  background-blend-mode: Eureka_small_1, saturation;
-}
-.Eureka_small_1-color-burn {
-  background-blend-mode: Eureka_small_1, color-burn;
+/* Hue Rotation Filter Effects */
+.huerotate-180 {
+  -webkit-filter: hue-rotate(180deg);
+}
+.hueNormal {
+  -webkit-filter: hue-rotate(0deg);
+  filter: hue-rotate(0deg);
+}
+.saturate {
+  -webkit-animation: saturate 6s ease;
+}
+.slowflash {
+  -webkit-animation: slowflash 6s ease;
+}
+.contrast-burst {
+  -webkit-animation: contrast-burst 5s ease;
+}
+@-webkit-keyframes saturate {
+  0%,
+  100% {
+    -webkit-filter: saturate(1);
+  }
+  50% {
+    -webkit-filter: saturate(5);
+  }
+}
+@-webkit-keyframes slowflash {
+  0%,
+  100% {
+    -webkit-filter: brightness(1);
+  }
+  69% {
+    -webkit-filter: brightness(4.2);
+  }
+}
+@-webkit-keyframes contrast-burst {
+  0%,
+  100% {
+    -webkit-filter: contrast(1);
+  }
+  75% {
+    -webkit-filter: contrast(6.9);
+  }
+}
+.hueCircle {
+  -webkit-animation: hueCircle 10s ease;
+}
+@-webkit-keyframes hueCircle {
+  0% {
+    -webkit-filter: hue-rotate(0);
+  }
+  50% {
+    -webkit-filter: hue-rotate(180);
+  }
+  100% {
+    -webkit-filter: hue-rotate(359);
+  }
+}
+.wtf {
+  -webkit-animation: wtf 6s ease;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes wtf {
+  0%,
+  100% {
+    -webkit-filter: blur(0px) brightness(none) hue-rotate(0deg) saturate(none);
+  }
+  50% {
+    -webkit-filter: brightness(3) hue-rotate(180deg) saturate(4) blur(2px);
+  }
 }
 .Eureka_small_1 {
   background: url("gifs/Eureka_small_1.gif");
 }
-.MACPLUSGRASS-screen {
-  background-blend-mode: MACPLUSGRASS, screen;
-}
-.MACPLUSGRASS-soft-light {
-  background-blend-mode: MACPLUSGRASS, soft-light;
-}
-.MACPLUSGRASS-luminosity {
-  background-blend-mode: MACPLUSGRASS, luminosity;
-}
-.MACPLUSGRASS-multiply {
-  background-blend-mode: MACPLUSGRASS, multiply;
-}
-.MACPLUSGRASS-hue {
-  background-blend-mode: MACPLUSGRASS, hue;
-}
-.MACPLUSGRASS-saturation {
-  background-blend-mode: MACPLUSGRASS, saturation;
-}
-.MACPLUSGRASS-color-burn {
-  background-blend-mode: MACPLUSGRASS, color-burn;
-}
 .MACPLUSGRASS {
   background: url("gifs/MACPLUSGRASS.gif");
-}
-.start95optimized-screen {
-  background-blend-mode: start95optimized, screen;
-}
-.start95optimized-soft-light {
-  background-blend-mode: start95optimized, soft-light;
-}
-.start95optimized-luminosity {
-  background-blend-mode: start95optimized, luminosity;
-}
-.start95optimized-multiply {
-  background-blend-mode: start95optimized, multiply;
-}
-.start95optimized-hue {
-  background-blend-mode: start95optimized, hue;
-}
-.start95optimized-saturation {
-  background-blend-mode: start95optimized, saturation;
-}
-.start95optimized-color-burn {
-  background-blend-mode: start95optimized, color-burn;
 }
 .start95optimized {
   background: url("gifs/start95optimized.gif");
 }
-.crystal_mercury_1b-screen {
-  background-blend-mode: crystal_mercury_1b, screen;
-}
-.crystal_mercury_1b-soft-light {
-  background-blend-mode: crystal_mercury_1b, soft-light;
-}
-.crystal_mercury_1b-luminosity {
-  background-blend-mode: crystal_mercury_1b, luminosity;
-}
-.crystal_mercury_1b-multiply {
-  background-blend-mode: crystal_mercury_1b, multiply;
-}
-.crystal_mercury_1b-hue {
-  background-blend-mode: crystal_mercury_1b, hue;
-}
-.crystal_mercury_1b-saturation {
-  background-blend-mode: crystal_mercury_1b, saturation;
-}
-.crystal_mercury_1b-color-burn {
-  background-blend-mode: crystal_mercury_1b, color-burn;
-}
 .crystal_mercury_1b {
   background: url("gifs/crystal_mercury_1b.gif");
 }
-.sailor_locket_1c-screen {
-  background-blend-mode: sailor_locket_1c, screen;
-}
-.sailor_locket_1c-soft-light {
-  background-blend-mode: sailor_locket_1c, soft-light;
-}
-.sailor_locket_1c-luminosity {
-  background-blend-mode: sailor_locket_1c, luminosity;
-}
-.sailor_locket_1c-multiply {
-  background-blend-mode: sailor_locket_1c, multiply;
-}
-.sailor_locket_1c-hue {
-  background-blend-mode: sailor_locket_1c, hue;
-}
-.sailor_locket_1c-saturation {
-  background-blend-mode: sailor_locket_1c, saturation;
-}
-.sailor_locket_1c-color-burn {
-  background-blend-mode: sailor_locket_1c, color-burn;
-}
 .sailor_locket_1c {
   background: url("gifs/sailor_locket_1c.gif");
-}
-.sailordither1-screen {
-  background-blend-mode: sailordither1, screen;
-}
-.sailordither1-soft-light {
-  background-blend-mode: sailordither1, soft-light;
-}
-.sailordither1-luminosity {
-  background-blend-mode: sailordither1, luminosity;
-}
-.sailordither1-multiply {
-  background-blend-mode: sailordither1, multiply;
-}
-.sailordither1-hue {
-  background-blend-mode: sailordither1, hue;
-}
-.sailordither1-saturation {
-  background-blend-mode: sailordither1, saturation;
-}
-.sailordither1-color-burn {
-  background-blend-mode: sailordither1, color-burn;
 }
 .sailordither1 {
   background: url("gifs/sailordither1.gif");
@@ -760,9 +96,11 @@
   background-size: 100%;
 }
 html {
+  image-rendering: pixlated;
   background-size: 100%;
 }
 .stretch {
   width: 100%;
   height: 100%;
+  image-rendering: pixlated;
 }

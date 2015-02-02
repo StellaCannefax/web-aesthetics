@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>Silly Cubes</title>
+		<style>canvas { width: 100%; height: 100% }</style>
+        <link rel="stylesheet" type="text/css" href="css/cubes.css">
+	</head>
+	<body>
+		<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+		<script src="js/three.min.js"></script>
+		<script src="js/cubes.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/mouse.js"></script>
+	    <audio src="audio/02%20Kickflip.mp3" height="100px" width="100px" autoplay="true"
+        ontimeupdate="document.getElementById('tracktime').innerHTML = Math.floor(this.currentTime) + ' / ' + Math.floor(this.duration);">
+        </audio>
+        <span id="tracktime">0 / 0</span>
+    </body>
+</html>

@@ -5,8 +5,69 @@
 @gifs: Eureka_small_1, MACPLUSGRASS, start95optimized, crystal_mercury_1b, sailor_locket_1c, sailordither1;
 
 .defaultBackground() {
+  image-rendering: pixlated;
   background-size: 100%;
 }
+
+/* Hue Rotation Filter Effects */
+.huerotate-180 {
+       -webkit-filter: hue-rotate(180deg);
+}
+
+.hueNormal {
+  -webkit-filter: hue-rotate(0deg);
+  filter: hue-rotate(0deg);
+}
+
+
+.saturate {
+  -webkit-animation: saturate 6s ease;
+}
+
+.slowflash {
+  -webkit-animation: slowflash 6s ease;
+}
+
+.contrast-burst {
+  -webkit-animation: contrast-burst 5s ease;
+}
+
+@-webkit-keyframes saturate {
+  0%, 100%  { -webkit-filter: saturate(1); }
+  50% { -webkit-filter: saturate(5); }
+}
+
+@-webkit-keyframes slowflash {
+  0%, 100%  { -webkit-filter: brightness(1); }
+  69% { -webkit-filter: brightness(4.2); }
+}
+
+@-webkit-keyframes contrast-burst {
+  0%, 100%  { -webkit-filter: contrast(1); }
+  75% { -webkit-filter: contrast(6.9); }
+}
+
+.hueCircle {
+  -webkit-animation: hueCircle 10s ease;
+}
+
+@-webkit-keyframes hueCircle {
+  0% { -webkit-filter: hue-rotate(0); }
+  50% { -webkit-filter: hue-rotate(180); }
+  100%  { -webkit-filter: hue-rotate(359); }
+}
+
+
+.wtf {
+  -webkit-animation: wtf 6s ease;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes wtf {
+  0%, 100%  { -webkit-filter: blur(0px) brightness(none) hue-rotate(0deg) saturate(none); }
+  50% { -webkit-filter: brightness(3) hue-rotate(180deg) saturate(4) blur(2px); }
+}
+
 
 .mix-top-mode-classes(@topmode) {
     .for(@blend-modes); .-each(@mode) {
@@ -17,13 +78,6 @@
 }
 
 
-.mix-top-mode-classes(screen);
-.mix-top-mode-classes(soft-light);
-.mix-top-mode-classes(luminosity);
-.mix-top-mode-classes(multiply);
-.mix-top-mode-classes(hue);
-.mix-top-mode-classes(saturation);
-.mix-top-mode-classes(color-burn);
 
 .for(@gifs); .-each(@gif) {
     .@{gif} {
@@ -51,4 +105,5 @@ html {
 .stretch {
     width: 100%;
     height: 100%;
+    image-rendering: pixlated;
 }

@@ -63,7 +63,8 @@ function init() {
     camera.lookAt( scene.position );
 
     renderer = new THREE.WebGLRenderer({ alpha: true });
-    renderer.setSize( window.innerWidth, window.innerHeight );
+    renderer.setSize( window.innerWidth/3, window.innerHeight/3 );
+    $('canvas').toggleClass('stretch');    
     renderer.setClearColor( 0x000000, 0 ); 
    
     //initTrackball();
@@ -102,7 +103,7 @@ function initParticles() {
         opacityStart: .25,
         opacityMiddle: .666,
         opacityEnd: .42,
-        particleCount: 1200,
+        particleCount: 800,
         angleAlignVelocity: 1
     });
 
@@ -119,7 +120,7 @@ function initParticles() {
         opacityStart: .75,
         opacityMiddle: .666,
         opacityEnd: .333,
-        particleCount: 1500,
+        particleCount: 1000,
         particlesPerSecond: 50,
     });
     
@@ -136,7 +137,7 @@ function initParticles() {
         opacityStart: .85,
         opacityMiddle: .7,
         opacityEnd: .666,
-        particleCount: 3000,
+        particleCount: 2500,
         particlesPerSecond: 300,
     });
     
@@ -153,7 +154,7 @@ function initParticles() {
         opacityStart: .6,
         opacityMiddle: .7,
         opacityEnd: .8,
-        particleCount: 2500,
+        particleCount: 1500,
         particlesPerSecond: 300,
     });
     
@@ -170,7 +171,7 @@ function initParticles() {
         opacityStart: .8,
         opacityMiddle: .88,
         opacityEnd: .7,
-        particleCount: 2000,
+        particleCount: 1250,
         particlesPerSecond: 200,
     });
 
@@ -187,7 +188,7 @@ function initParticles() {
         opacityStart: .6,
         opacityMiddle: .5,
         opacityEnd: .4,
-        particleCount: 1000,
+        particleCount: 750,
         particlesPerSecond: 40,
     });
     for (var n=1 ; n < 6 ; n++) {
@@ -211,8 +212,8 @@ function initParticles() {
             opacityStart: .8,
             opacityMiddle: .75,
             opacityEnd: .6,
-            particleCount: 300,
-            particlesPerSecond: 15,
+            particleCount: 200,
+            particlesPerSecond: 12,
         });
         console.log(starEmitter);
         particleCursor.addEmitter( starEmitter );
@@ -239,7 +240,7 @@ function animate() {
     requestAnimationFrame( animate );
     //controls.update();
     // Using a fixed time-step here to avoid pauses
-    render( 0.024 );
+    render( 0.016 );
     stats.update();
 }
 
